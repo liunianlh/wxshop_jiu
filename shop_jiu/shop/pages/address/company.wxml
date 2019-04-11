@@ -1,0 +1,101 @@
+<view class="container">
+  <view class="common-header-xian"></view>
+  <!-- 表单 -->
+  <form bindsubmit="saveData" report-submit="true">
+
+  <view class="address-cont-title b-f b-b">
+      <view class="dis-flex list address-box m-top20 b-b">
+       <view class="left-name">
+          <text class="f-30">公司名</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="company" placeholder="请输入公司名" value="{{company}}"></input>
+        </view>
+      </view>
+      <view class="dis-flex list address-box b-b">
+        <view class="left-name">
+          <text class="f-30">公司地址</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="address" placeholder="请输入公司地址" type="text" value="{{address}}"></input>
+        </view>
+      </view>
+
+        <view class="dis-flex list address-box b-b">
+       <view class="left-name">
+          <text class="f-30">公司联系人</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="contacts" placeholder="请输入公司联系人" value="{{contacts}}"></input>
+        </view>
+      </view>
+
+        <view class="dis-flex list address-box b-b">
+       <view class="left-name">
+          <text class="f-30">联系电话</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="phone" placeholder="请输入公司联系电话" value="{{phone}}"></input>
+        </view>
+      </view>
+
+
+     <view class="dis-flex list address-box b-b">
+       <view class="left-name">
+          <text class="f-30">税号</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="duty" placeholder="请输入税号" value="{{duty}}"></input>
+        </view>
+      </view>
+
+
+        <view class="dis-flex list address-box b-b">
+       <view class="left-name">
+          <text class="f-30">开户行</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="opening" placeholder="请输入开户行" value="{{opening}}"></input>
+        </view>
+      </view>
+
+    <view class="dis-flex list address-box b-b">
+       <view class="left-name">
+          <text class="f-30">账号</text>
+        </view>
+        <view class="right-cont flex-box">
+          <input name="number" placeholder="请输入账号" value="{{number}}"></input>
+        </view>
+      </view>
+
+
+
+    </view>
+
+    <view class="padding-box m-top20 profile-btn">
+      <button formType="submit" disabled="{{disabled}}">保存</button>
+    </view>
+  </form>
+
+  <!-- 快捷导航 -->
+  <view class="filter-menu {{nav_select?'active':''}}">
+    <view class="filter-menu-list ts-5">
+      <custom-ul>
+        <custom-li bindtap="nav" data-index="home">
+          <text class="iconfont icon-home"></text>
+        </custom-li>
+        <custom-li bindtap="nav" data-index="fenlei">
+          <text class="iconfont icon-fenlei"></text>
+        </custom-li>
+        <custom-li bindtap="nav" data-index="cart">
+          <text class="iconfont icon-cart"></text>
+        </custom-li>
+        <custom-li bindtap="nav" data-index="profile">
+          <text class="iconfont icon-profile"></text>
+        </custom-li>
+        <custom-li class="w"></custom-li>
+      </custom-ul>
+    </view>
+    <view bindtap="commonNav" class="filter-menu-title"></view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<!-- <view> -->
+<view class="container">
+  <view class="wechatapp">
+    <!-- <image class="header" src="/images/wechatapp.png"></image> -->
+    <view class="header">
+      <open-data class="" type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+  <view class="auth-title">申请获取以下权限</view>
+  <view class="auth-subtitle">获得你的公开信息（昵称、头像等）</view>
+
+
+  <!-- <view class="auth-subtitle">
+     <navigator hover-class="none" url="../login/phone">
+ <button class="login-btn">手机登录</button>
+    </navigator>
+ 
+  </view> -->
+   <view class="auth-subtitle">
+  <button class="login-btn" openType="getUserInfo" lang="zh_CN" bindgetuserinfo="authorLogin">微信登录</button>
+  </view>
+  
+</view>
+<!-- </view> -->
